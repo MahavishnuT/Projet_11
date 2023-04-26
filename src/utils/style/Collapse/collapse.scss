@@ -1,0 +1,17 @@
+@import "../Variables/variables";
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  .collapse {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+    &-header {
+      background-color: red;
+    }
+  }
+}

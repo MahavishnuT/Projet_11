@@ -1,0 +1,13 @@
+section {
+  margin: 50px;
+  .housing-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+  }
+}
