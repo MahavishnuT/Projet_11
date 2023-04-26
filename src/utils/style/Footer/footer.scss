@@ -1,4 +1,21 @@
-.logo-footer {
-  fill: white;
-  width: 100%;
+@import "../Variables/variables";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color-footer;
+  color: white;
+  align-items: center;
+  height: 160px;
+  font-weight: 500;
+  position: relative;
+  .logo-footer {
+    position: absolute;
+    top: 30%;
+    width: 100px;
+  }
+  p {
+    position: absolute;
+    bottom: 7%;
+  }
 }

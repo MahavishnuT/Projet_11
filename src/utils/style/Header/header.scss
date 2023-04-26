@@ -1,0 +1,26 @@
+@import '../Variables/variables';
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 50px;
+  .logo-header {
+    width: 140px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    justify-content: space-between;
+    .link-nav {
+      font-size: 20px;
+      color: $primary-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

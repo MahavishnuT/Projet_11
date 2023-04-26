@@ -1,0 +1,21 @@
+@import "../Variables/variables";
+
+.error-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $primary-color;
+  &_title {
+    font-weight: 700;
+    font-size: 200px;
+    margin:0;
+  }
+  &_text {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  &_link {
+    color: $primary-color;
+    margin: 100px 0 100px 0;
+  }
+}
