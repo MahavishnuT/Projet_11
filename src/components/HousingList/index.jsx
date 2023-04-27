@@ -9,6 +9,7 @@ function HousingList() {
         {housingList.map(({id, title, cover}) => (
           <HousingItem 
               key={id}
+              id={id}
               title={title}
               cover={cover}
           />

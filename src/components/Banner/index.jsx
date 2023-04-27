@@ -5,7 +5,6 @@ function Banner({picture}) {
   const location = useLocation()
   const locationString = location.pathname.toString()
 
-  console.log(locationString)
 
   return (
     <div className="banner">

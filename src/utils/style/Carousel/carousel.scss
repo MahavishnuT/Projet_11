@@ -1,0 +1,60 @@
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  border-radius: 0.8rem;
+  &:hover {
+      .carousel-index {
+          opacity: 1;
+      }
+  }
+
+  &-wrapper {
+      display: flex;
+      transition: transform .5s ease;
+
+      &_img {
+          flex-shrink: 0;
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+      }
+  }
+
+  &-controls {
+      display: flex;
+      position: absolute;
+      width: 95%;
+      height: 100%;
+      margin: 0 10px;
+      justify-content: space-between;
+      &_chevron_left {
+          width: 45px;
+          height: auto;
+          font-size: 20px;
+          color: white;
+          cursor: pointer;
+      }
+      &_chevron_right {
+        width: 45px;
+        height: auto;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+  }
+
+  &-index {
+      position: absolute;
+      color: white;
+      bottom: 10px;
+      font-size: 15px;
+      padding: 0.2rem 0.4rem;
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+  }
+}
