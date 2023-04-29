@@ -1,0 +1,14 @@
+@import "../Variables/variables";
+
+.housing-page_header_ratings {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  &_rating {
+    color: $primary-color;
+  }
+  &_rating_grey {
+    color: #E3E3E3;
+  }
+}
