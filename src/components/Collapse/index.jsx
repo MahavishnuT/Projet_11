@@ -3,8 +3,12 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import '../../utils/style/Collapse/collapse.scss'
 
-const chevronUp = <FontAwesomeIcon icon={faChevronUp} className="collapse-header_chevron" />
-const chevronDown = <FontAwesomeIcon icon={faChevronDown} className="collapse-header_chevron" />
+const chevronUp = (
+  <FontAwesomeIcon icon={faChevronUp} className="collapse-header_chevron" />
+)
+const chevronDown = (
+  <FontAwesomeIcon icon={faChevronDown} className="collapse-header_chevron" />
+)
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +25,7 @@ function Collapse({ title, content }) {
       </div>
       {isOpen && (
         <div className="collapse-content">
-          <p className="collapse-content_name">{content}</p>
+          <div className="collapse-content_name">{content}</div>
         </div>
       )}
     </div>

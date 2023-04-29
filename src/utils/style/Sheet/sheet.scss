@@ -27,8 +27,56 @@
       &_tags {
         display: flex;
         flex-direction: row;
-        
+        gap: 10px;
+        color: white;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        &_tag {
+          background-color: $primary-color;
+          padding: 5px 10px;
+          font-size: 10px;
+          font-weight: 500;
+          border-radius: 10px;
+        }
       }
+    }
+    &_host {
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+      &_infos {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+        align-items: center;
+        &_name {
+          color: $primary-color;
+          font-weight: 500;
+          font-size: 15px;
+          text-align: right;
+        }
+        &_img {
+          height: 54px;
+          width: 54px;
+          border-radius: 50%;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &_collapses {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    .collapse {
+      width: 47%;
+      .collapse-header {
+        margin: 20px 0;
+      }
+    }
+    &_content_list {
     }
   }
 }

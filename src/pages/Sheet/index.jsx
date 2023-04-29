@@ -1,14 +1,17 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import housingList from '../../data/logements.json'
 import Collapse from '../../components/Collapse'
 import Carousel from '../../components/Carousel'
 import RatingScale from '../../components/RatingScale'
-import '../../utils/style/Collapse/collapse.scss'
 import '../../utils/style/Sheet/sheet.scss'
 
 function Sheet() {
   const { id } = useParams()
   const housing = housingList.find((housing) => housing.id === id)
+
+  if(housing === undefined) {
+    return <Navigate to="*" />
+  } 
 
   return (
     <section key={housing.id} className="housing-page">
@@ -19,13 +22,13 @@ function Sheet() {
           <h2 className="housing-page_header_infos_location">
             {housing.location}
           </h2>
-          <div className="housing-page_header_infos_tags">
+          <ul className="housing-page_header_infos_tags">
             {housing.tags.map((tag, i) => (
-              <p key={i} className="housing-page_header_infos_tags_tag">
+              <li key={i} className="housing-page_header_infos_tags_tag">
                 {tag}
-              </p>
+              </li>
             ))}
-          </div>
+          </ul>
         </article>
 
         <article className="housing-page_header_host">
@@ -44,19 +47,15 @@ function Sheet() {
       </header>
 
       <article className="housing-page_collapses">
-        <div className="housing-page_collapses_content">
-          <Collapse title="Description" content={housing.description} />
-        </div>
-        <div className="housing-page_collapses_content">
-          <Collapse
-            title="Équipements"
-            content={housing.equipments.map((equipment, i) => (
-              <ul key={i}>
-                <li>• {equipment}</li>
-              </ul>
-            ))}
-          />
-        </div>
+        <Collapse title="Description" content={housing.description} />
+        <Collapse
+          title="Équipements"
+          content={housing.equipments.map((equipment, i) => (
+            <div key={i} className="housing-page_collapses_content_list">
+              {equipment}
+            </div>
+          ))}
+        />
       </article>
     </section>
   )
