@@ -12,7 +12,7 @@ header {
   nav {
     display: flex;
     flex-direction: row;
-    min-width: 200px;
+    width: 200px;
     justify-content: space-between;
     .link-nav {
       font-size: 20px;
@@ -20,6 +20,21 @@ header {
       text-decoration: none;
       &:hover {
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    margin: 20px;
+    nav {
+      width: 180px;
+      .link-nav {
+        padding: 0.2rem 0 0.2rem 0.5rem;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
       }
     }
   }
