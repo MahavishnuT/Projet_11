@@ -58,3 +58,15 @@
     transition: opacity 250ms ease-in-out;
   }
 }
+
+@media (max-width: 576px) {
+  .carousel-wrapper_img {
+    height: 250px;
+  }
+  .carousel-controls_chevron_left {
+    width: 20px;
+  }
+  .carousel-controls_chevron_right {
+    width: 20px;
+  }
+}

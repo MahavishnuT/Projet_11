@@ -17,6 +17,7 @@
 
 html {
   line-height: 1.15; 
+  height: 100%;
 }
 
 /* Sections
@@ -28,6 +29,11 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 /**

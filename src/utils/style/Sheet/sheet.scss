@@ -76,7 +76,32 @@
         margin: 20px 0;
       }
     }
-    &_content_list {
+  }
+}
+
+@media (max-width: 576px) {
+  .housing-page {
+    width: 90%;
+    &_header {
+      flex-direction: column;
+      &_ratings {
+        width: 30%;
+      }
+      &_host {
+        flex-direction: row-reverse;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        &_infos {
+          margin: 0;
+        }
+      }
+    }
+    &_collapses {
+      flex-direction: column;
+      .collapse {
+        width: 100%;
+      }
     }
   }
 }

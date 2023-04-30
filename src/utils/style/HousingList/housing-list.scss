@@ -11,3 +11,12 @@ section {
     gap: 50px;
   }
 }
+
+@media (max-width: 576px) {
+  section {
+    margin: 0px auto;
+    .housing-list  {
+      gap: 10px;
+    }
+  }
+}

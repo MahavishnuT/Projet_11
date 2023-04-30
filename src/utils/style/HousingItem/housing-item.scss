@@ -28,3 +28,13 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .housing-item {
+    width: 90%;
+    .housing-link {
+      width: 100%;
+      margin: 10px 0;
+    }
+  } 
+}
