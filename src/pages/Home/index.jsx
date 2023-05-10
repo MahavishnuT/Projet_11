@@ -5,7 +5,7 @@ import homeBanner from "../../assets/banner-home.png"
 function Home() {
   return (
     <div>
-      <Banner picture={homeBanner}/>
+      <Banner picture={homeBanner} title="Chez vous, partout et ailleurs" />
       <HousingList />
     </div>
   );

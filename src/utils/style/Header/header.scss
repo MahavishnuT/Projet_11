@@ -18,7 +18,7 @@ header {
       font-size: 20px;
       color: $primary-color;
       text-decoration: none;
-      &:hover {
+      &:hover, &:focus {
         text-decoration: underline;
       }
     }
