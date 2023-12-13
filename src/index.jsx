@@ -19,7 +19,7 @@ root.render(
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/housing_sheet/:id' element={<Sheet />} />
-        <Route path='*' element={<Error />} />
+        <Route path='/*' element={<Error />} />
       </Routes>
       <Footer />
     </Router>
