@@ -16,10 +16,10 @@ root.render(
     <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/housing_sheet/:id' element={<Sheet />} />
-        <Route path='/*' element={<Error />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </Router>
